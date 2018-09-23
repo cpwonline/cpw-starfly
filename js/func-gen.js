@@ -62,11 +62,10 @@ function starFly(t, m, cierre, duracion){
 		cajaContenedor.appendChild(cajaMensaje);
 		if(cierre == 0)
 			cajaContenedor.appendChild(cajaBoton);
-	//Buscamos el elemento posterior
-		var cajaPosterior = padre.getElementById("pie_starFly");
-		alert(cajaPosterior);
+	//Buscamos el último elemento como referencia
+		var cajaUltima = padre.lastChild;
 	//Añadimos la notificación a starFly
-		padre.insertBefore(cajaContenedor, cajaPosterior);
+		padre.insertBefore(cajaContenedor, cajaUltima);
 	//Mostramos el panel
 		padre.style.display = "block";
 	//Si es automático el cierre
