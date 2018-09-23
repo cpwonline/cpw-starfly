@@ -7,13 +7,9 @@
 	position: fixed;
 	width:50%;
 	height:auto;
-	background:#988;
+	background:none;
 	right:0;
 	top:0;
 	z-index:100000000000;
 	display:none;
-	transition: .3s all;
-	-webkit-transition: .3s all;
-	-moz-transition: .3s all;
-	-o-transition: .3s all;
 }
