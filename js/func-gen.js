@@ -10,19 +10,21 @@
 
 //Función general
 
+//Elementos
+	obActual_starFly = new Array();
+	cont_starFly = 0;
+	estoy_starFly = 0;
 function starFly(t, m, cierre, duracion){
 	//Padre
 		padre = document.getElementById("starFly");
 	//Funciones principales
 		//Función para borrar la notificación del documento
-			this.borrarElemento_2_starFly = function(algo){
-				alert(algo);
-				alert(cajaContenedor);
-				padre.removeChild(cajaContenedor);
+			this.borrarElemento_2_starFly = function(){
+				padre.removeChild(obActual_starFly[estoy_starFly]);
+				estoy_starFly++;
 			}
 		//Función para borrar la notificación del documento
 			this.borrarElemento_starFly = function(elemento, nivel, tipo){
-				alert("entre");
 				switch(tipo){
 					case 'inst':
 						alert("caso inst");
@@ -38,7 +40,9 @@ function starFly(t, m, cierre, duracion){
 						}
 						break;
 					case 'xT':
-						setTimeout(borrarElemento_2_starFly('jaja'), 3000);
+						obActual_starFly[cont_starFly] = elemento;
+						cont_starFly++;
+						setTimeout(borrarElemento_2_starFly, 3000);
 						break;
 				}
 				this.ocultarPanel_starFly();
