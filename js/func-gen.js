@@ -27,14 +27,12 @@ function starFly(t, m, cierre, duracion){
 			this.borrarElemento_starFly = function(elemento, nivel, tipo){
 				switch(tipo){
 					case 'inst':
-						alert("caso inst");
 						switch(nivel){
 							case 0:
 								alert($(elemento.parentNode).html());
 								padre.removeChild(elemento.parentNode);
 								break;
 							case 1:
-								alert("1");
 								padre.removeChild(elemento);
 								break;
 						}
@@ -111,10 +109,16 @@ function starFly(t, m, cierre, duracion){
 
 /*
 	Ejemplo de uso (usando los 3 tipos de notificaciones):
-		var titulo = "Titulo 1";var titulo2 = "Titulo 2";var titulo3 = "Titulo 3";
-		var mensaje = "Mensaje 1";var mensaje2 = "Mensaje 2";var mensaje3 = "Mensaje 3";
-		starFly(titulo, mensaje, 0, 3000);//Not. que hay que presionar 'Ok'->0
-		starFly(titulo2, mensaje2, 1, 4000);//Not. que se borra automáticamente->1
-		var ob = starFly(titulo3, mensaje3, 2, 5000);//Not. que se quita manualmente con código->2
-		borrarElemento_starFly(ob, 0);
+		//Datos
+			var titulo = "Titulo 1";var titulo2 = "Titulo 2";var titulo3 = "Titulo 3";
+			var mensaje = "Mensaje 1";var mensaje2 = "Mensaje 2";var mensaje3 = "Mensaje 3";
+			
+		//Tipo 0
+			starFly(titulo, mensaje, 0, 0);//Not. que se borra al presionar 'Ok'
+		//Tipo 1
+			starFly(titulo, mensaje, 1, 5000);//Not. que se borra automáticamente
+		//Tipo 2
+			ob_sF = starFly(titulo, mensaje, 2, 5000);//Not. que se quita manualmente con código
+			nuevoMsj_starFly(mensajeNuevo, ob_sF);
+			borrarElemento_starFly(ob_sF, 0, 'xT');
 */
