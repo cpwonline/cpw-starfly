@@ -28,11 +28,11 @@ function starFly(t, m, cierre, duracion){
 				switch(tipo){
 					case 'inst':
 						switch(nivel){
-							case 0:
+							case 0://Desde el hijo (Botón o entre otros)
 								alert($(elemento.parentNode).html());
 								padre.removeChild(elemento.parentNode);
 								break;
-							case 1:
+							case 1://Desde el padre (Elemento o cuadro en sí)
 								padre.removeChild(elemento);
 								break;
 						}
