@@ -1,13 +1,3 @@
-//Variables generales
-	//De estilo
-		estiloContenedor = "background:hsla(0, 0%, 30%, .9);padding:.2cm;margin-bottom:.1cm;overflow:hidden;text-align:right;border-radius:.1cm;-webkit-border-radius:.1cm;-moz-border-radius:.1cm;-o-border-radius:.1cm;transition:.3s all;-webkit-transition:.3s all;-moz-transition:.3s all;-o-transition:.3s all;";
-		estiloTitulo = "font-size:12pt;color:#CCC;margin-bottom:.1cm;";
-		estiloMensaje = "font-size:10pt;color:#FFF;";
-		estiloBoton = "btn-gen";//Debes elegir una clase 
-	//De personalización
-		textoBotonGen = "Ok";
-//Fin variables generales
-
 //Función general
 
 //Elementos
@@ -106,19 +96,3 @@ function starFly(t, m, cierre, duracion){
 	//Retornamos la notificación si alguien desea almacenar su dirección en una variable
 		return cajaContenedor;
 }
-
-/*
-	Ejemplo de uso (usando los 3 tipos de notificaciones):
-		//Datos
-			var titulo = "Titulo 1";var titulo2 = "Titulo 2";var titulo3 = "Titulo 3";
-			var mensaje = "Mensaje 1";var mensaje2 = "Mensaje 2";var mensaje3 = "Mensaje 3";
-			
-		//Tipo 0
-			starFly(titulo, mensaje, 0, 0);//Not. que se borra al presionar 'Ok'
-		//Tipo 1
-			starFly(titulo, mensaje, 1, 5000);//Not. que se borra automáticamente
-		//Tipo 2
-			ob_sF = starFly(titulo, mensaje, 2, 5000);//Not. que se quita manualmente con código
-			nuevoMsj_starFly(mensajeNuevo, ob_sF);
-			borrarElemento_starFly(ob_sF, 0, 'xT');
-*/
