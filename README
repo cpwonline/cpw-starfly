@@ -1,0 +1,154 @@
+StarFly - README
+================
+
+Introducción
+------------
+
+Developed, designed and made by the Web Developers Team of CPW Online | https://github.com/cpwonline/
+
+¡Hola! Gracias por utilizar este software, desarrollado con mucho esfuerzo y cariño para la comunidad del Software libre. 
+
+¿Qué es StarFly?
+----------------
+
+Es un administrador de notifiaciones que funciona como plugin en un sitio web. 
+No es necesario añadir ningún complemento de jQuery porque este software no lo utiliza. 
+
+Este, funciona como complemento de su sitio ya que le permitiría ocuparse en otros aspectos
+de la web y no de estar ocupado programando anuncios que indican las notificaciones que usted quiere
+mostrar, y que, en ocasiones el usuario nunca llega a ver.
+
+Características
+---------------
+
+*Rápido y confiable
+*No necesita jQuery
+*Trabaja con puro código JavaScript (soportado por la mayoría de navegadores actuales)
+*Personalizable a su gusto
+
+Requerimientos
+--------------
+*Soporte para CSS y JavaScript
+
+Instalación
+-----------
+
+Pasos para instalar StarFly:
+
+1. Descargar o clonar el repositorio de https://github.com/cpwonline/starfly.git
+
+2. Ahora debe copiar el directorio (si lo descargó debe descomprimirlo primero) en el directorio
+donde se encuentra su sitio web local (O remoto)
+
+3. Si usted tiene un archivo .js (código fuente de JavaScript) usted deberá editar ese archivo y
+agregar las siguientes líneas de código (Desde "Inicio copiado" hasta "Fin copiado", nada más):
+
+//Inicio copiado
+//Variables generales de StarFly
+	//De estilo
+		estiloContenedor = "background:hsla(0, 0%, 30%, .9);padding:.2cm;margin-bottom:.1cm;overflow:hidden;text-align:right;border-radius:.1cm;-webkit-border-radius:.1cm;-moz-border-radius:.1cm;-o-border-radius:.1cm;transition:.3s all;-webkit-transition:.3s all;-moz-transition:.3s all;-o-transition:.3s all;";
+		estiloTitulo = "font-size:12pt;color:#CCC;margin-bottom:.1cm;";
+		estiloMensaje = "font-size:10pt;color:#FFF;";
+		estiloBoton = "btn-gen";//Debes elegir una clase 
+	//De personalización
+		textoBotonGen = "Ok";
+//Fin variables generales de StarFly
+//Fin copiado
+
+Si usted no tiene algún archivo .js, deberá crear un archivo llamado "main.js" (Puede ser
+el nombre que usted desee) y agregar las líneas de código anteriores.
+
+4. En el archivo principal de su sitio web (sea index, index.hmtl o index.php), usted deberá
+tener anexado el archivo de su main.js y los archivos de la carpeta starfly, agregue
+las siguientes líneas de código en su <head>:
+	<!--Archivos principales de StarFly-->
+		<link rel="stylesheet" href="starfly/css/estilo-gen.css"/>
+		<script src="starfly/js/func-gen.js"/></script>
+	<!--Fin Archivos principales de StarFly-->
+
+Cómo usar StarFly
+-----------------
+
+Es fácil, hay tres tipos de notificaciones:
+
+1. Not. que desaparece al presionar 'Ok'
+
+Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
+
+//Inicio de código
+	//Datos
+		var titulo = "Alerta"
+		var mensaje = "Usted ha ingresado una clave incorrecta."
+	//Notificación
+		starFly(titulo, mensaje, 0, 0);
+//Fin de código
+
+2. Not. que desaparece automáticamente en determinados segundos
+
+Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
+
+//Inicio de código
+	//Datos
+		var titulo = "Alerta"
+		var mensaje = "Usted ha ingresado una clave incorrecta."
+	//Notificación
+		starFly(titulo, mensaje, 1, 5000);
+//Fin de código
+
+3. Not. que desaparece sólo con código
+
+Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
+
+//Inicio de código
+	//Datos
+		var titulo = "Alerta"
+		var mensaje = "Usted ha ingresado una clave incorrecta."
+	//Notificación
+		//Se crea
+			ob_sF = starFly(titulo, mensaje, 2, 5000);
+		//Se borra
+			borrarElemento_starFly(ob_sF, 1, 'xT');
+//Fin de código
+
+*Extra. También puede editar el mensaje (Solo la notificación que desaparece con código)
+
+Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
+
+//Inicio de código
+	//Datos
+		var titulo = "Alerta"
+		var mensaje = "Usted ha ingresado una clave incorrecta."
+	//Notificación
+		//Se crea
+			ob_sF = starFly(titulo, mensaje, 2, 5000);
+		//Editamos el mensaje
+			nuevoMsj_starFly('Usted ha sido bloqueado', ob_sF);
+		//Se borra
+			borrarElemento_starFly(ob_sF, 1, 'xT');
+//Fin de código
+
+Documentción
+------------
+
+Por los momentos no contamos con documentación en línea, ¡pero trabajamos en ello!
+
+Donaciones
+----------
+
+Si usted quiere ayudarnos financieramente nosotros aceptamos sus donaciones usando 
+Paypal y realizando los siguientes pasos: 
+
+1. Acceda desde su navegador a la siguiente URL: paypal.me/cpwonline
+
+2. Déjese llevar ;)
+
+Contacto
+--------
+
+Si usted desea ponerse en contacto con nosotros es sencillo:
+
+*Github: [cpwonline](https://github.com/cpwonline)
+*Hotmail: [cpwonline](cpwonline@hotmail.com)
+*Gmail: [grupocpwonline](grupocpwonline@gmail.com)
+*Facebook: [@CPWOnline](https://facebook.com/CPWOnline)
+*Instagram: [@cpwonline](https://instagram.com/cpwonline)
