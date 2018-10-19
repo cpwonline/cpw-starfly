@@ -4,7 +4,7 @@ Acuerdo de licencia de software
 Introducción
 ------------
 
-StarFly - Volando en el cielo - https://github.com/cpwonline/starfly.git
+StarFly - Sus notificaciones a la mano - https://github.com/cpwonline/starfly.git
 
 Licenciado bajo los terminos de la siguiente licencia:
 
@@ -16,18 +16,33 @@ Licenciado bajo los terminos de la siguiente licencia:
 Especificaciones acerca de la licencia
 --------------------------------------
 
-En simples palabras, aquí están algunas cosas importantes que puedes y no puedes hacer con este software:
+Aspectos importantes de la licencia sobre este software:
 
-	- Cualquier modificación o derivación (creación a partir de este software) debe contener la misma licencia.
-	
-	- Este software puede pertener a una aplicación más grande y esa aplicación puede contener modulos licenciados bajo cualquier otro esquema (incluso privativos).
-	
-	- Los derechos de autor deben mantenerse tanto en el código fuente como en los binarios.
-	
-	- No requiere que los cambios realizados sean reflejados en el código fuente
+1. Permisiones
 
-	- Para más especificaciones, lea la licencia
+* Para Uso comercial
 
+* Para Distribución
+
+* Para Modificación
+
+* Para Uso patentado
+
+* Para Uso privado
+
+2. Condiciones
+
+* Se debe incluir la licencia y los derechos de autor
+
+* Se debe incluir los Cambios de estado
+
+3. Limitaciones
+
+* Limitación de responsabilidad
+
+* Limitación de uso de marca registrada
+
+* Limitación de garantía
 
 Sofwares de propiedad intelectual incluidos
 -------------------------------------------
