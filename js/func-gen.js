@@ -1,10 +1,10 @@
 //Función general
+	//Elementos
+		obActual_starFly = new Array();
+		cont_starFly = 0;
+		estoy_starFly = 0;
 
-//Elementos
-	obActual_starFly = new Array();
-	cont_starFly = 0;
-	estoy_starFly = 0;
-function starFly(t, m, cierre, duracion){
+function starFly(t, m, cierre, duracion, icono){
 	//Padre
 		padre = document.getElementById("starFly");
 	//Funciones principales
@@ -19,7 +19,6 @@ function starFly(t, m, cierre, duracion){
 					case 'inst':
 						switch(nivel){
 							case 0://Desde el hijo (Botón o entre otros)
-								alert($(elemento.parentNode).html());
 								padre.removeChild(elemento.parentNode);
 								break;
 							case 1://Desde el padre (Elemento o cuadro en sí)
@@ -61,11 +60,44 @@ function starFly(t, m, cierre, duracion){
 	//Creamos las cajas principales
 		//Creamos las cajas
 			var cajaContenedor = document.createElement('article');
+			var cajaIzq = document.createElement('div');
+			var cajaDer = document.createElement('div');
+			var cajaIcono = document.createElement('i');
 			var cajaTitulo = document.createElement('h2');
 			var cajaMensaje = document.createElement('p');
 			var cajaBoton = document.createElement('button');
 		//Añadimos estilos
 			cajaContenedor.setAttribute("style", estiloContenedor);
+			cajaDer.setAttribute("style", "width:78%;display:inline-block;");
+			cajaIzq.setAttribute("style", "width:18%;display:inline-block;text-align:left;");
+			//Añadimos los estilos de iconos
+				switch(icono){
+					case "good":
+						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/acercade.png')no-repeat center;";
+						break;
+					case "settings":
+						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/acercade.png')no-repeat center;";
+						break;
+					case "question":
+						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/acercade.png')no-repeat center;";
+						break;
+					case "delete":
+						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/acercade.png')no-repeat center;";
+						break;
+					case "cancel":
+						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/acercade.png')no-repeat center;";
+						break;
+					case "information":
+						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/acercade.png')no-repeat center;";
+						break;
+					case "security":
+						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/acercade.png')no-repeat center;";
+						break;
+					default:
+						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/cancelar.png')no-repeat center;";
+						break;
+				}
+			cajaIcono.setAttribute("style", es);
 			cajaTitulo.setAttribute("style", estiloTitulo);
 			cajaMensaje.setAttribute("style", estiloMensaje);
 			cajaBoton.setAttribute("class", estiloBoton);
@@ -73,14 +105,20 @@ function starFly(t, m, cierre, duracion){
 			cajaBoton.setAttribute("onclick", "borrarElemento_starFly(this, 0, 'inst');");
 	//Creamos el contenido
 		var textoTitulo = document.createTextNode(t);
+		var textoIcono = document.createTextNode('');
 		var textoMensaje = document.createTextNode(m);
 		var textoBoton = document.createTextNode(textoBotonGen);
 	//Asignamos valores
+		cajaIcono.appendChild(textoIcono);
 		cajaTitulo.appendChild(textoTitulo);
 		cajaMensaje.appendChild(textoMensaje);
 		cajaBoton.appendChild(textoBoton);
-	//Asignamos valores a la caja principal
-		cajaContenedor.appendChild(cajaTitulo);
+	//Asignamos las cajas a las caja izquierda y derecha
+		cajaIzq.appendChild(cajaIcono);
+		cajaDer.appendChild(cajaTitulo);
+	//Asignamos las cajas a la caja principal
+		cajaContenedor.appendChild(cajaIzq);
+		cajaContenedor.appendChild(cajaDer);
 		cajaContenedor.appendChild(cajaMensaje);
 		if(cierre == 0)
 			cajaContenedor.appendChild(cajaBoton);

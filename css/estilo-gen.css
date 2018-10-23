@@ -1,8 +1,6 @@
-*{
-	padding:0;
-	margin:0;
-}
 #starFly{
+	margin:0;
+	padding:0;
 	padding:.3cm;
 	position: fixed;
 	width:50%;
@@ -10,7 +8,7 @@
 	background:none;
 	right:0;
 	top:0;
-	z-index:100000000000;
+	z-index:1000000000000000;
 	display:none;
-	overflow:hidden;
+	overflow:auto;
 }
