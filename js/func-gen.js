@@ -76,25 +76,25 @@ function starFly(t, m, cierre, duracion, icono){
 						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/acercade.png')no-repeat center;";
 						break;
 					case "settings":
-						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/acercade.png')no-repeat center;";
+						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/ajustes.png')no-repeat center;";
 						break;
 					case "question":
-						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/acercade.png')no-repeat center;";
+						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/ayuda.png')no-repeat center;";
 						break;
 					case "delete":
-						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/acercade.png')no-repeat center;";
+						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/borrar.png')no-repeat center;";
 						break;
 					case "cancel":
-						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/acercade.png')no-repeat center;";
+						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/cancelar.png')no-repeat center;";
 						break;
 					case "information":
-						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/acercade.png')no-repeat center;";
+						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/informaciones.png')no-repeat center;";
 						break;
 					case "security":
-						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/acercade.png')no-repeat center;";
+						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/seguridad.png')no-repeat center;";
 						break;
 					default:
-						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/cancelar.png')no-repeat center;";
+						var es = estiloIcono + "background:url('starfly/images/16x16_blanco/informaciones.png')no-repeat center;";
 						break;
 				}
 			cajaIcono.setAttribute("style", es);
