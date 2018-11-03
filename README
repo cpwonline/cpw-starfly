@@ -8,15 +8,32 @@ Developed, designed and made by the Web Developers Team of CPW Online | https://
 
 ¡Hola! Gracias por utilizar este software, desarrollado con mucho esfuerzo y cariño para la comunidad del Software libre. 
 
+Introduction
+------------
+
+Developed, designed and made by the Web Developers Team of CPW Online | https://github.com/cpwonline/
+
+¡Hi! Thank you to use it software, developed with very struggle and love for the Open Source community.
+
 ¿Qué es StarFly?
 ----------------
 
 Es un administrador de notificaciones que funciona como complemento (o plugin) en un sitio web. 
-No es necesario añadir ningún plugin de jQuery porque este software no lo utiliza. 
+No es necesario añadir algún plugin de jQuery, este software no lo utiliza. 
 
-Este, funciona como complemento de su sitio ya que le permitiría ocuparse en otros aspectos
+Este funciona como complemento de su sitio ya que le permitiría ocuparse en otros aspectos
 de la web y no de estar ocupado programando anuncios que indican las notificaciones que usted quiere
 mostrar, y que, en ocasiones el usuario nunca llega a ver.
+
+What is StarFly?
+----------------
+
+Is a notifications administrator that it run like complement (or plugin) in a website.
+Is not necesary to add any jQuery plugin, it software not use.
+
+It run like of your website, because it allow you to work in other aspects of your web
+and to be not trouble you programming alerts that it indicate the notifications that you want
+to show, and that, in moments the user never see.
 
 Características
 ---------------
@@ -26,9 +43,23 @@ Características
 *Trabaja con puro código JavaScript (soportado por la mayoría de navegadores actuales)
 *Personalizable a su gusto
 
+Caracteristics
+--------------
+
+*Fast and safe
+*It want not jQuery
+*It work with JavaScript code
+*It personalize that your taste
+
 Requerimientos
 --------------
+
 *Soporte para CSS y JavaScript
+
+Requirements
+------------
+
+Support for CSS and JavaScript
 
 Instalación
 -----------
