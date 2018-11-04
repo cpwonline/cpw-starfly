@@ -1,5 +1,5 @@
-Acuerdo de licencia de software
-===============================
+Acuerdo de licencia de software - Software license agreement
+============================================================
 
 Introducción
 ------------
@@ -12,6 +12,16 @@ Licenciado bajo los terminos de la siguiente licencia:
    http://www.apache.org/licenses/LICENSE-2.0
    (Ver todo)
    
+Introduction
+-------------
+
+StarFly - Your notifications at hand - https://github.com/cpwonline/starfly.git
+
+Licensed under the terms of the following license:
+
+  - Apache License 2.0 or later
+    http://www.apache.org/licenses/LICENSE-2.0
+    (See everything)
 
 Especificaciones acerca de la licencia
 --------------------------------------
@@ -44,16 +54,55 @@ Aspectos importantes de la licencia sobre este software:
 
 * Limitación de garantía
 
-Sofwares de propiedad intelectual incluidos
+Specifications about the license
+--------------------------------
+
+Important aspects of the license on this software:
+
+1. Permissions
+
+* For commercial use
+
+* For Distribution
+
+* For Modification
+
+* For patented use
+
+* For private use
+
+2. Conditions
+
+* License and copyright must be included
+
+* State changes must be included
+
+3. Limitations
+
+* Limitation of liability
+
+* Limitation of use of registered trademark
+
+* Limitation of guarantee
+
+Softwares de propiedad intelectual incluidos
 -------------------------------------------
 
-Los siguientes softwares, plugins, complementos, frameweorks, son incluidos 
+Los siguientes softwares, plugins, complementos, frameworks, son incluidos 
 en StarFly:
 
 * No hay
 
-La licencia Apache
-------------------
+Intellectual property software included
+---------------------------------------
+
+The following softwares, plugins, complements, frameworks, are included
+on StarFly:
+
+* There is not
+
+La licencia Apache - The Apache licence
+---------------------------------------
 
                                  Apache License
                            Version 2.0, January 2004

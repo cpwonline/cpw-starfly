@@ -11,9 +11,7 @@ Developed, designed and made by the Web Developers Team of CPW Online | https://
 Introduction
 ------------
 
-Developed, designed and made by the Web Developers Team of CPW Online | https://github.com/cpwonline/
-
-¡Hi! Thank you to use it software, developed with very struggle and love for the Open Source community.
+Hello! Thank you for using this software, developed with a lot of effort and affection for the Free Software community.
 
 ¿Qué es StarFly?
 ----------------
@@ -28,12 +26,12 @@ mostrar, y que, en ocasiones el usuario nunca llega a ver.
 What is StarFly?
 ----------------
 
-Is a notifications administrator that it run like complement (or plugin) in a website.
-Is not necesary to add any jQuery plugin, it software not use.
+It is a notification manager that works as a complement (or plugin) in a website.
+It is not necessary to add any jQuery plugin, this software does not use it.
 
-It run like of your website, because it allow you to work in other aspects of your web
-and to be not trouble you programming alerts that it indicate the notifications that you want
-to show, and that, in moments the user never see.
+This works as a complement to your site because it would allow you to deal with other aspects
+of the web and not to be busy scheduling ads that indicate the notifications you want
+show, and that, sometimes the user never gets to see.
 
 Características
 ---------------
@@ -43,13 +41,13 @@ Características
 *Trabaja con puro código JavaScript (soportado por la mayoría de navegadores actuales)
 *Personalizable a su gusto
 
-Caracteristics
+Features
 --------------
 
-*Fast and safe
-*It want not jQuery
-*It work with JavaScript code
-*It personalize that your taste
+* Fast and reliable
+* Does not need jQuery
+* Work with pure JavaScript code (supported by most current browsers)
+* Customizable to your liking
 
 Requerimientos
 --------------
@@ -98,6 +96,44 @@ las siguientes líneas de código en su <head>:
 		<link rel="stylesheet" href="starfly/css/estilo-gen.css"/>
 		<script src="starfly/js/func-gen.js"/></script>
 	<!--Fin Archivos principales de StarFly-->
+
+Instalation
+-----------
+
+Steps to install StarFly:
+
+1. Download or clone the repository of https://github.com/cpwonline/starfly.git
+
+2. Now you must copy the directory (if you downloaded it you must unzip it first) in the directory
+where is your local website (or remote)
+
+3. If you have a .js file (JavaScript source code) you must edit that file and
+add the following lines of code (From "Start copied" to "End copied", nothing else):
+
+// Start copied
+// StarFly general variables
+	// Of style
+		estiloContenedor = "background:hsla(0, 0%, 30%, .9);padding:.2cm;margin-bottom:.1cm;overflow:hidden;text-align:right;border-radius:.1cm;-webkit-border-radius:.1cm;-moz-border-radius:.1cm;-o-border-radius:.1cm;transition:.3s all;-webkit-transition:.3s all;-moz-transition:.3s all;-o-transition:.3s all;";
+		estiloIcono = "width:16px;height:16px;display:inline-block;";
+		estiloTitulo = "font-size:12pt;color:#CCC;margin-bottom:.1cm;padding:.25cm;";
+		estiloMensaje = "font-size:10pt;color:#FFF;";
+		estiloBoton = "Tu-estilo";//You must choose a style class
+	//Of personalization
+		textoBotonGen = "Ok";
+// End StarFly general variables
+// End copied
+
+If you do not have any .js file, you should create a file called "main.js" (It can be
+the name you want) and add the previous lines of code.
+
+4. In the main file of your website (be it index, index.html or index.php), you must
+have attached the file of your main.js and the files of the folder starfly, add
+The following lines of code in your <head>:
+
+	<!--StarFly main files-->
+		<link rel="stylesheet" href="starfly/css/estilo-gen.css"/>
+		<script src="starfly/js/func-gen.js"/></script>
+	<!--End StarFly main files-->
 
 Cómo usar StarFly
 -----------------
@@ -178,10 +214,94 @@ Para mostrar esta notificación, añada las siguientes líneas de código a su m
 
 7. security: Icono que indica que lo que se muestra es privado, información importante o restringida
 
+How to use StarFly
+------------------
+
+It's easy, there are three types of notifications:
+
+1. Not. that disappears when pressing 'Ok'
+
+To display this notification, add the following lines of code to your main.js:
+
+//Start code
+	//Data
+		var title = "Alert"
+		var message = "You have entered an incorrect password."
+	//Notification
+		starFly(title, message, 0, 0, "security");
+//End code
+
+2. Not. that disappears automatically in certain seconds
+
+To display this notification, add the following lines of code to your main.js:
+
+//Start code
+	//Data
+		var title = "Alert"
+		var message = "You have entered an incorrect password."
+	//Notification
+		starFly(title, message, 1, 5000, "security");
+//End code
+
+*Note: In the previous code the notification will disappear after 5 seconds (5000 milliseconds).
+
+3. Not. that disappears only with code
+
+To display this notification, add the following lines of code to your main.js:
+
+//Start code
+	//Data
+		var title = "Alert"
+		var message = "You have entered an incorrect password."
+	//Notification
+		//It's created
+			ob_sF = starFly(title, message, 2, 0, "question");
+		//It's erased
+			borrarElemento_starFly(ob_sF, 1, 'xT');
+//End code
+
+* Extra. You can also edit the message (Only for notification that disappears with code)
+
+To display this notification, add the following lines of code to your main.js:
+
+//Start code
+	//Data
+		var title = "Alert"
+		var message = "You have entered an incorrect password."
+	//Notification
+		//It's created
+			ob_sF = starFly(title, message, 2, 5000, "question");
+		//We edit the message
+			nuevoMsj_starFly('You have been blocked', ob_sF);
+		//It's erased
+			borrarElemento_starFly(ob_sF, 1, 'xT');
+//End code
+
+* Extra. Some icons available for notification:
+
+1. good: Icon that indicates an affirmation or that something was done correctly.
+
+2. settings: Icon that indicates that an adjustment has been made
+
+3. question: Icon indicating that an unknown error has occurred
+
+4. delete: Icon that indicates that something has been deleted
+
+5. cancel: Icon indicating that a specific error has occurred
+
+6. information: Icon that indicates that what is shown is informative
+
+7. security: Icon that indicates that what is shown is private, important or restricted information
+
 Documentación
-------------
+-------------
 
 Por los momentos no contamos con documentación en línea, ¡pero trabajamos en ello!
+
+Documentation
+-------------
+
+At the moment we do not have online documentation, but we work on it!
 
 Donaciones
 ----------
@@ -193,13 +313,34 @@ Paypal y realizando los siguientes pasos:
 
 2. Déjese llevar ;)
 
+Donations
+----------
+
+If you want to help us financially we accept your donations using
+Paypal and performing the following steps:
+
+1. Access the following URL from your browser: paypal.me/cpwonline
+
+2. Let yourself go ;)
+
 Contacto
 --------
 
 Si usted desea ponerse en contacto con nosotros es sencillo:
 
-*Github: [cpwonline](https://github.com/cpwonline)
-*Hotmail: [cpwonline](cpwonline@hotmail.com)
-*Gmail: [grupocpwonline](grupocpwonline@gmail.com)
+*GitHub: [cpwonline](https://www.github.com/cpwonline/starfly.git)
+*Web: [cpwonline](https://www.cpwonline.com.ve/contacto)
+*Email: [cpwonline](support@cpwonline.com.ve)
 *Facebook: [@CPWOnline](https://facebook.com/CPWOnline)
 *Instagram: [@cpwonline](https://instagram.com/cpwonline)
+
+Contact
+-------
+
+If you wish to contact us, it is simple:
+
+*GitHub: [cpwonline](https://www.github.com/cpwonline/starfly.git)
+* Web: [cpwonline] (https://www.cpwonline.com.ve/contacto)
+* Email: [cpwonline] (support@cpwonline.com.ve)
+* Facebook: [@CPWOnline] (https://facebook.com/CPWOnline)
+* Instagram: [@cpwonline] (https://instagram.com/cpwonline)
