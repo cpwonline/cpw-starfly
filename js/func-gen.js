@@ -70,7 +70,7 @@ function starFly(t, m, cierre, duracion, icono){
 			cajaContenedor.setAttribute("style", estiloContenedor);
 			cajaDer.setAttribute("style", "width:78%;display:inline-block;");
 			cajaIzq.setAttribute("style", "width:18%;display:inline-block;text-align:left;");
-			//Añadimos los estilos de iconos
+			//Añadimos los estilos de iconos - We add the icons styles
 				var es = "";
 				switch(icono){
 					case "good":
