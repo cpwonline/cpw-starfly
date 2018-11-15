@@ -27,8 +27,18 @@ function starFly(t, m, cierre, duracion, icono){
 	//Funciones principales - Main functions
 		//Función para borrar la notificación del documento - Function to delete the document notification
 			this.borrarElemento_2_starFly = function(){
-				padre.removeChild(obActual_starFly[estoy_starFly]);
-				estoy_starFly++;
+				if(obActual_starFly[estoy_starFly].parentNode == null){
+					estoy_starFly++;
+				}else{
+					var ob = obActual_starFly[estoy_starFly].parentNode;
+					if(typeof (ob.childNodes)[0] == "undefined"){
+						estoy_starFly++;
+					}else{
+						padre.removeChild(obActual_starFly[estoy_starFly]);
+						estoy_starFly++;
+					}
+				}
+				this.ocultarPanel_starFly();
 			}
 		//Función para borrar la notificación del documento - Function to delete the document notification
 			this.borrarElemento_starFly = function(elemento, nivel, tipo){
@@ -49,13 +59,16 @@ function starFly(t, m, cierre, duracion, icono){
 						setTimeout(borrarElemento_2_starFly, 3000);
 						break;
 				}
-				this.ocultarPanel_starFly();
 			}
 		//Función para ocultar el panel si no hay notificaciones - Function to hide the panel if there are no notifications
 			this.ocultarPanel_starFly = function(){
 				var c = padre.getElementsByTagName('article');
-				if(c.length < 1)
+				if(c.length < 1){
 					padre.style.display = "none";
+					obActual_starFly = [];
+					cont_starFly = 0;
+					estoy_starFly = 0;
+				}
 			}
 		//Función que se llama cuando la notifcación es tipo 1 o 2 - Function that is called when the notification is type 1 or 2
 			this.esperaAuto_starFly = function(tipo, duracion){
