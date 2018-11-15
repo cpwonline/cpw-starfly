@@ -3,7 +3,24 @@
 		obActual_starFly = new Array();
 		cont_starFly = 0;
 		estoy_starFly = 0;
-		
+	//Estilos generales - General styles
+		//Comprobamos si están definidos - We verify if they're defined
+			if(typeof estiloContenedor == "undefined"){
+				estiloContenedor = "background:hsla(0, 0%, 30%, .9);padding:.2cm;margin-bottom:.1cm;overflow:hidden;text-align:right;border-radius:.1cm;-webkit-border-radius:.1cm;-moz-border-radius:.1cm;-o-border-radius:.1cm;transition:.3s all;-webkit-transition:.3s all;-moz-transition:.3s all;-o-transition:.3s all;";
+			}
+			if(typeof estiloIcono == "undefined")
+				estiloIcono = "width:16px;height:16px;display:inline-block;";
+			if(typeof estiloTitulo == "undefined")
+				estiloTitulo = "display:inline-block;font-size:12pt;color:#CCC;margin-bottom:.1cm;padding:.25cm;";
+			if(typeof estiloCerrar == "undefined")
+				estiloCerrar = "cursor:pointer;display:inline-block;float:right;padding:.4cm;color:#fff;text-align:center;width:10%;";
+			if(typeof estiloMensaje == "undefined")
+				estiloMensaje = "font-size:10pt;color:#FFF;";
+			if(typeof estiloBoton == "undefined")
+				estiloBoton = "padding:.3cm;color:#fff;background:#777;text-decoration:none;";
+			if(typeof textoBotonGen == "undefined")
+				textoBotonGen = "Ok";
+
 function starFly(t, m, cierre, duracion, icono){
 	//Padre - Father
 		padre = document.getElementById("starFly");
