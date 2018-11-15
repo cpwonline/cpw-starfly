@@ -64,12 +64,13 @@ function starFly(t, m, cierre, duracion, icono){
 			var cajaDer = document.createElement('div');
 			var cajaIcono = document.createElement('i');
 			var cajaTitulo = document.createElement('h2');
+			var cajaCerrar = document.createElement('div');
 			var cajaMensaje = document.createElement('p');
 			var cajaBoton = document.createElement('button');
 		//Añadimos estilos - We add the styles
 			cajaContenedor.setAttribute("style", estiloContenedor);
-			cajaDer.setAttribute("style", "width:78%;display:inline-block;");
-			cajaIzq.setAttribute("style", "width:18%;display:inline-block;text-align:left;");
+			cajaDer.setAttribute("style", "width:78%;display:inline-block;overflow:hidden;float:rigth;");
+			cajaIzq.setAttribute("style", "width:18%;display:inline-block;text-align:left;overflow:hidden;float:left;");
 			//Añadimos los estilos de iconos - We add the icons styles
 				var es = "";
 				switch(icono){
@@ -100,23 +101,30 @@ function starFly(t, m, cierre, duracion, icono){
 				}
 			cajaIcono.setAttribute("style", es);
 			cajaTitulo.setAttribute("style", estiloTitulo);
+			cajaCerrar.setAttribute("style", estiloCerrar);
 			cajaMensaje.setAttribute("style", estiloMensaje);
 			cajaBoton.setAttribute("class", estiloBoton);
 		//Añadimos contenido dinámico - We add dynamic content
 			cajaBoton.setAttribute("onclick", "borrarElemento_starFly(this, 0, 'inst');");
+			cajaCerrar.setAttribute("onmouseover", "this.style.background = '#777';");
+			cajaCerrar.setAttribute("onmouseout", "this.style.background = 'none';");
+			cajaCerrar.setAttribute("onclick", "((this.parentNode).parentNode).parentNode.removeChild((this.parentNode).parentNode);");
 	//Creamos el contenido - We create the content
 		var textoTitulo = document.createTextNode(t);
+		var textoCerrar = document.createTextNode("x");
 		var textoIcono = document.createTextNode('');
 		var textoMensaje = document.createTextNode(m);
 		var textoBoton = document.createTextNode(textoBotonGen);
 	//Asignamos valores - We assign values
 		cajaIcono.appendChild(textoIcono);
 		cajaTitulo.appendChild(textoTitulo);
+		cajaCerrar.appendChild(textoCerrar);
 		cajaMensaje.appendChild(textoMensaje);
 		cajaBoton.appendChild(textoBoton);
 	//Asignamos las cajas a la caja izquierda y derecha - We assign the boxes to the left and right boxes
 		cajaIzq.appendChild(cajaIcono);
 		cajaDer.appendChild(cajaTitulo);
+		cajaDer.appendChild(cajaCerrar);
 	//Asignamos las cajas a la caja principal - We assign the boxes to the main box
 		cajaContenedor.appendChild(cajaIzq);
 		cajaContenedor.appendChild(cajaDer);
