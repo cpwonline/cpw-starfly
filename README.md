@@ -2,15 +2,15 @@
 
 ## Introducción 🚀
 
-_Desarrollado, diseñado y creado por el **Equipo de Desarrolladores Web de CPW Online** | [CPW Online](https://github.com/cpwonline/)_
+Desarrollado, diseñado y creado por el **Equipo de Desarrolladores Web de CPW Online** | [CPW Online](https://github.com/cpwonline/)
 
-_¡Hola! Gracias por utilizar este software, desarrollado con mucho esfuerzo y cariño para la comunidad del Software libre._
+¡Hola! Gracias por utilizar este software, desarrollado con mucho esfuerzo y cariño para la comunidad del Software libre.
 
 ## Introduction 🚀
 
-_Developed, designed and made by the **Web Developers Team of CPW Online** | [CPW Online](https://github.com/cpwonline/)_
+Developed, designed and made by the **Web Developers Team of CPW Online** | [CPW Online](https://github.com/cpwonline/)
 
-_Hello! Thank you for using this software, developed with a lot of effort and affection for the Free Software community._
+Hello! Thank you for using this software, developed with a lot of effort and affection for the Free Software community.
 
 ### ¿Qué es StarFly?
 
@@ -56,14 +56,14 @@ show, and that, sometimes the user never gets to see._
 
 _Pasos para instalar StarFly:_
 
-* 1. _Descargar o clonar el repositorio de [StarFly](https://github.com/cpwonline/starfly.git)_
+* 1. Descargar o clonar el repositorio de [StarFly](https://github.com/cpwonline/starfly.git)
 
-* 2. _Ahora debe copiar el directorio (si lo descargó debe descomprimirlo primero) en el directorio
-donde se encuentra su sitio web local (O remoto)_
+* 2. Ahora debe copiar el directorio (si lo descargó debe descomprimirlo primero) en el directorio
+donde se encuentra su sitio web local (O remoto)
 
 * 3. En el archivo principal de su sitio web (sea index, index.html o index.php), usted deberá
 tener anexado el archivo de su main.js y los archivos de la carpeta starfly, agregue
-las siguientes líneas de código en su *<head>*:_
+las siguientes líneas de código en su *<head>*:
 
   ```HTML
 	<!--Archivos principales de StarFly-->
@@ -75,14 +75,14 @@ las siguientes líneas de código en su *<head>*:_
 
 _Steps to install StarFly:_
 
-* 1. _Download or clone the repository of [CPW Online](https://github.com/cpwonline/starfly.git)_
+* 1. Download or clone the repository of [CPW Online](https://github.com/cpwonline/starfly.git)
 
-* 2. _Now you must copy the directory (if you downloaded it you must unzip it first) in the directory
-where is your local website (or remote)_
+* 2. Now you must copy the directory (if you downloaded it you must unzip it first) in the directory
+where is your local website (or remote)
 
 * 3. In the main file of your website (be it index, index.html or index.php), you must
 have attached the file of your main.js and the files of the folder starfly, add
-The following lines of code in your *<head>*:_
+The following lines of code in your *<head>*:
 
   ```HTML
 	<!--StarFly main files-->
@@ -93,11 +93,11 @@ The following lines of code in your *<head>*:_
 
 ## Cómo usar StarFly
 
-_Es fácil, hay tres tipos de notificaciones:_
+Es fácil, hay tres tipos de notificaciones:
 
 * 1. _Not. que desaparece al presionar 'Ok'_
 
-_Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:_
+Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
 
 	´´´Js
 	//Inicio de código
@@ -111,7 +111,7 @@ _Para mostrar esta notificación, añada las siguientes líneas de código a su 
 
 * 2. _Not. que desaparece automáticamente en determinados segundos_
 
-_Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:_
+Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
 
 	´´´Js
 	//Inicio de código
@@ -127,7 +127,7 @@ _Para mostrar esta notificación, añada las siguientes líneas de código a su 
 
 * 3. _Not. que desaparece sólo con código_
 
-_Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:_
+Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
 
 	´´´Js
 	//Inicio de código
@@ -145,7 +145,7 @@ _Para mostrar esta notificación, añada las siguientes líneas de código a su 
 
 * _Extra. También puede editar el mensaje (Solo para la notificación que desaparece con código)_
 
-_Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:_
+Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
 
 	´´´Js
 	//Inicio de código
@@ -164,23 +164,23 @@ _Para mostrar esta notificación, añada las siguientes líneas de código a su 
 
 * _Extra. Algunos iconos disponibles para su notificación:_
 
-1. _**good**: Icono que indica una afirmación o que algo se realizó correctamente._
+1. **good**: Icono que indica una afirmación o que algo se realizó correctamente.
 
-2. _**settings**: Icono que indica que se ha realizado un ajuste_
+2. **settings**: Icono que indica que se ha realizado un ajuste
 
-3. _**question**: Icono que indica que ha sucedido un error desconocido_
+3. **question**: Icono que indica que ha sucedido un error desconocido
 
-4. _**delete**: Icono que indica que se ha eliminado algo_
+4. **delete**: Icono que indica que se ha eliminado algo
 
-5. _**cancel**: Icono que indica que ha sucedido un error en específico_
+5. **cancel**: Icono que indica que ha sucedido un error en específico
 
-6. _**information**: Icono que indica que lo que se muestra es informativo_
+6. **information**: Icono que indica que lo que se muestra es informativo
 
-7. _**security**: Icono que indica que lo que se muestra es privado, información importante o restringida_
+7. **security**: Icono que indica que lo que se muestra es privado, información importante o restringida
 
-* Extra. _Si usted tiene un archivo **.js** (código fuente de JavaScript) usted puede editar ese archivo y
+* Extra. Si usted tiene un archivo *.js* (código fuente de JavaScript) usted puede editar ese archivo y
 agregar las siguientes líneas de código (Desde "Inicio copiado" hasta "Fin copiado", nada más) para cambiar el
-diseño de StarFly:_
+diseño de StarFly:
 
 		´´´Js
 		//Inicio copiado
@@ -208,7 +208,7 @@ _It's easy, there are three types of notifications:_
 
 * 1. _Not. that disappears when pressing 'Ok'_
 
-_To display this notification, add the following lines of code to your main.js:_
+To display this notification, add the following lines of code to your main.js:
 
 	´´´Js
 	//Start code
@@ -222,7 +222,7 @@ _To display this notification, add the following lines of code to your main.js:_
 
 * 2. _Not. that disappears automatically in certain seconds_
 
-_To display this notification, add the following lines of code to your main.js:_
+To display this notification, add the following lines of code to your main.js:
 
 	´´´Js
 	//Start code
@@ -238,7 +238,7 @@ _To display this notification, add the following lines of code to your main.js:_
 
 * 3. _Not. that disappears only with code_
 
-_To display this notification, add the following lines of code to your *main.js*:_
+To display this notification, add the following lines of code to your *main.js*:
 
 	´´´Js
 	//Start code
@@ -255,7 +255,7 @@ _To display this notification, add the following lines of code to your *main.js*
 
 * _Extra. You can also edit the message (Only for notification that disappears with code)_
 
-_To display this notification, add the following lines of code to your main.js:_
+To display this notification, add the following lines of code to your main.js:
 
 	´´´Js
 	//Start code
@@ -274,19 +274,19 @@ _To display this notification, add the following lines of code to your main.js:_
 
 * _Extra. Some icons available for notification:_
 
-1. **good**: _Icon that indicates an affirmation or that something was done correctly._
+1. **good**: Icon that indicates an affirmation or that something was done correctly.
 
-2. **settings**: _Icon that indicates that an adjustment has been made_
+2. **settings**: Icon that indicates that an adjustment has been made
 
-3. **question**: _Icon indicating that an unknown error has occurred_
+3. **question**: Icon indicating that an unknown error has occurred
 
-4. **delete**: _Icon that indicates that something has been deleted_
+4. **delete**: Icon that indicates that something has been deleted
 
-5. **cancel**: _Icon indicating that a specific error has occurred_
+5. **cancel**: Icon indicating that a specific error has occurred
 
-6. **information**: _Icon that indicates that what is shown is informative_
+6. **information**: Icon that indicates that what is shown is informative
 
-7. **security**: _Icon that indicates that what is shown is private, important or restricted information_
+7. **security**: Icon that indicates that what is shown is private, important or restricted information
 
 * _Extra. If you have a .js file (JavaScript source code) you can edit that file and
 add the following lines of code (From "Start copied" to "End copied", nothing else) to change the StarFly design:_
@@ -313,29 +313,29 @@ the name you want) and add the previous lines of code._
 
 ## Documentación
 
-_Por los momentos no contamos con documentación en línea, ¡pero trabajamos en ello!_
+Por los momentos no contamos con documentación en línea, ¡pero trabajamos en ello!
 
 ## Documentation
 
-_At the moment we do not have online documentation, but we work on it!_
+At the moment we do not have online documentation, but we work on it!
 
 ## Donaciones
 
 _Si usted quiere ayudarnos financieramente nosotros aceptamos sus donaciones usando 
 Paypal y realizando los siguientes pasos:_
 
-* 1. _Acceda desde su navegador a la siguiente URL: [PayPal - CPW Online](paypal.me/cpwonline)_
+* 1. Acceda desde su navegador a la siguiente URL: [PayPal - CPW Online](paypal.me/cpwonline)
 
-* 2. _Déjese llevar ;)_
+* 2. Déjese llevar ;)
 
 ## Donations
 
 _If you want to help us financially we accept your donations using
 Paypal and performing the following steps:_
 
-* 1. _Access the following URL from your browser: [PayPal - CPW Online]( paypal.me/cpwonline)_
+* 1. Access the following URL from your browser: [PayPal - CPW Online]( paypal.me/cpwonline)
 
-* 2. _Let yourself go ;)_
+* 2. Let yourself go ;)
 
 ### Contacto
 
