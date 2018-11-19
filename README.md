@@ -1,4 +1,4 @@
-#StarFly
+# StarFly
 
 ## Introducción 🚀
 
@@ -356,3 +356,11 @@ _If you wish to contact us, it is simple:_
 * **Email**: [CPW Online](support@cpwonline.com.ve)
 * **Facebook**: [@CPWOnline](https://facebook.com/CPWOnline)
 * **Instagram**: [@cpwonline](https://instagram.com/cpwonline)
+
+## Licencia 📄
+
+_Este proyecto está bajo la Licencia [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) - mira el archivo [LICENSE](LICENSE) para más detalles_
+
+## Licence 📄
+
+_This project is under licence [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) - see file [LICENSE](LICENSE) for more details_
