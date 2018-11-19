@@ -82,7 +82,7 @@ where is your local website (or remote)
 
 * 3. In the main file of your website (be it index, index.html or index.php), you must
 have attached the file of your main.js and the files of the folder starfly, add
-The following lines of code in your *<head>*:
+The following lines of code in your **head**:
 
   ```HTML
 	<!--StarFly main files-->
@@ -97,9 +97,9 @@ Es fácil, hay tres tipos de notificaciones:
 
 * 1. _Not. que desaparece al presionar 'Ok'_
 
-Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
+Para mostrar esta notificación, añada las siguientes líneas de código a su *main.js*:
 
-	´´´Js
+	```Js
 	//Inicio de código
 		//Datos
 			var titulo = "Alerta"
@@ -107,13 +107,13 @@ Para mostrar esta notificación, añada las siguientes líneas de código a su m
 		//Notificación
 			starFly(titulo, mensaje, 0, 0, "question");
 	//Fin de código
-	´´´
+	```
 
 * 2. _Not. que desaparece automáticamente en determinados segundos_
 
 Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
 
-	´´´Js
+	```Js
 	//Inicio de código
 		//Datos
 			var titulo = "Alerta"
@@ -121,7 +121,7 @@ Para mostrar esta notificación, añada las siguientes líneas de código a su m
 		//Notificación
 			starFly(titulo, mensaje, 1, 5000, "security");
 	//Fin de código
-	´´´
+	```
 
 * _Nota: En el código anterior la notificación desaparecerá al cumplirse 5 segundos (5000 milisegundos)._
 
@@ -129,7 +129,7 @@ Para mostrar esta notificación, añada las siguientes líneas de código a su m
 
 Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
 
-	´´´Js
+	```Js
 	//Inicio de código
 		//Datos
 			var titulo = "Alerta"
@@ -140,14 +140,14 @@ Para mostrar esta notificación, añada las siguientes líneas de código a su m
 			//Se borra
 				borrarElemento_starFly(ob_sF, 1, 'xT');
 	//Fin de código
-	´´´
+	```
 
 
 * _Extra. También puede editar el mensaje (Solo para la notificación que desaparece con código)_
 
 Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
 
-	´´´Js
+	```Js
 	//Inicio de código
 		//Datos
 			var titulo = "Alerta"
@@ -160,7 +160,7 @@ Para mostrar esta notificación, añada las siguientes líneas de código a su m
 			//Se borra
 				borrarElemento_starFly(ob_sF, 1, 'xT');
 	//Fin de código
-	´´´
+	```
 
 * _Extra. Algunos iconos disponibles para su notificación:_
 
@@ -182,7 +182,7 @@ Para mostrar esta notificación, añada las siguientes líneas de código a su m
 agregar las siguientes líneas de código (Desde "Inicio copiado" hasta "Fin copiado", nada más) para cambiar el
 diseño de StarFly:
 
-		´´´Js
+		```Js
 		//Inicio copiado
 		//Variables generales de StarFly
 			//De estilo
@@ -196,7 +196,7 @@ diseño de StarFly:
 				textoBotonGen = "Ok";
 		//Fin variables generales de StarFly
 		//Fin copiado
-		´´´
+		```
 
 _Si usted no tiene algún archivo .js, deberá crear un archivo llamado *"main.js"* (Puede ser
 el nombre que usted desee) y agregar las líneas de código anteriores._
@@ -210,7 +210,7 @@ _It's easy, there are three types of notifications:_
 
 To display this notification, add the following lines of code to your main.js:
 
-	´´´Js
+	```Js
 	//Start code
 		//Data
 			var title = "Alert"
@@ -218,13 +218,13 @@ To display this notification, add the following lines of code to your main.js:
 		//Notification
 			starFly(title, message, 0, 0, "security");
 	//End code
-	´´´
+	```
 
 * 2. _Not. that disappears automatically in certain seconds_
 
 To display this notification, add the following lines of code to your main.js:
 
-	´´´Js
+	```Js
 	//Start code
 		//Data
 			var title = "Alert"
@@ -232,7 +232,7 @@ To display this notification, add the following lines of code to your main.js:
 		//Notification
 			starFly(title, message, 1, 5000, "security");
 	//End code
-	´´´
+	```
 
 * _Note: In the previous code the notification will disappear after 5 seconds (5000 milliseconds)._
 
@@ -240,7 +240,7 @@ To display this notification, add the following lines of code to your main.js:
 
 To display this notification, add the following lines of code to your *main.js*:
 
-	´´´Js
+	```Js
 	//Start code
 		//Data
 			var title = "Alert"
@@ -251,13 +251,13 @@ To display this notification, add the following lines of code to your *main.js*:
 			//It's erased
 				borrarElemento_starFly(ob_sF, 1, 'xT');
 	//End code
-	´´´
+	```
 
 * _Extra. You can also edit the message (Only for notification that disappears with code)_
 
 To display this notification, add the following lines of code to your main.js:
 
-	´´´Js
+	```Js
 	//Start code
 		//Data
 			var title = "Alert"
@@ -270,7 +270,7 @@ To display this notification, add the following lines of code to your main.js:
 			//It's erased
 				borrarElemento_starFly(ob_sF, 1, 'xT');
 	//End code
-	´´´
+	```
 
 * _Extra. Some icons available for notification:_
 
@@ -291,7 +291,7 @@ To display this notification, add the following lines of code to your main.js:
 * _Extra. If you have a .js file (JavaScript source code) you can edit that file and
 add the following lines of code (From "Start copied" to "End copied", nothing else) to change the StarFly design:_
 
-		´´´Js
+		```Js
 		// Start copied
 		// StarFly general variables
 			// Of style
@@ -305,7 +305,7 @@ add the following lines of code (From "Start copied" to "End copied", nothing el
 				textoBotonGen = "Ok";
 		// End StarFly general variables
 		// End copied
-		´´´
+		```
 
 _If you do not have any .js file, you should create a file called *"main.js"* (It can be
 the name you want) and add the previous lines of code._
