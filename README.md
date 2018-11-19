@@ -1,6 +1,12 @@
 StarFly - README
 ================
 
+### Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Updates](#updates)
+* [License](#license)
+
 Introducción
 ------------
 
@@ -74,12 +80,13 @@ donde se encuentra su sitio web local (O remoto)
 3. En el archivo principal de su sitio web (sea index, index.html o index.php), usted deberá
 tener anexado el archivo de su main.js y los archivos de la carpeta starfly, agregue
 las siguientes líneas de código en su <head>:
-
+	
+  ```HTML
 	<!--Archivos principales de StarFly-->
 		<link rel="stylesheet" href="starfly/css/estilo-gen.css"/>
 		<script src="starfly/js/func-gen.js"/></script>
 	<!--Fin Archivos principales de StarFly-->
-
+  ```
 Instalation
 -----------
 
