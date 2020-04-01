@@ -1,7 +1,6 @@
 # StarFly
 
-![StarFly logo](https://www.dropbox.com/s/8u8p7xahskok17p/StarFly_F-Trans.png)
-![StarFly logo2](https://previews.dropbox.com/p/thumb/AAsFIssiVOYPSZ9_yqcl9Qe8TiS-GgBEOrItNvt-6MruPLRxUQqYRev9-eN2Pi_tL3zkG5EbBg6Fo5w0w7kC2NJ3N1PsgEXrF0lS9EaQOH_CEPShYTZpil_LUvuuPijtyDQv0sl5aeYwMH5_3SHP_n4keOi7Eh-9Lx6bYOEDRg31u5zolUYVGGj3wbag1MnIUSG8u6KsYFSPqmrDhee6-YvcEHSS5ZT4zsSE8J-T4t7sZH_bT_lrf-UaPTQjCiPLSU7-NNEHWm_W8GfK9hdpPk3IUvetv8_jqzfqLvR8AAorkIQOMS5SVScP2kF3ddtCRgiQivw7D9G66ySWsxBMD8ms/p.png?fv_content=true&size_mode=5)
+![StarFly logo](https://www.dl.dropboxusercontent.com/s/8u8p7xahskok17p/StarFly_F-Trans.png)
 
 ## Introducción 🚀
 
@@ -9,29 +8,33 @@ Desarrollado, diseñado y creado por el **Equipo de Desarrolladores Web de CPW O
 
 ¡Hola! Gracias por utilizar este software, desarrollado con mucho esfuerzo y cariño para la comunidad del Software libre.
 
+
+
 ## Introduction 🚀
 
 Developed, designed and made by the **Web Developers Team of CPW Online** | [CPW Online](https://github.com/cpwonline/)
 
 Hello! Thank you for using this software, developed with a lot of effort and affection for the Free Software community.
 
-### ¿Qué es StarFly?
 
-_Es un administrador de notificaciones que funciona como complemento (o plugin) en un sitio web._
-_No es necesario añadir algún plugin de jQuery, este software no lo utiliza._
 
-_Este funciona como complemento de su sitio ya que le permitiría ocuparse en otros aspectos
-de la web y no de estar ocupado programando anuncios que indican las notificaciones que usted quiere
-mostrar, y que, en ocasiones el usuario nunca llega a ver._
+## ¿Qué es StarFly?
 
-### What is StarFly?
+Es un administrador de notificaciones que funciona como complemento (o plugin) en un sitio web. No es necesario añadir algún plugin de jQuery, este software no lo utiliza.
 
-_It is a notification manager that works as a complement (or plugin) in a website._
-_It is not necessary to add any jQuery plugin, this software does not use it._
+​	Este funciona como complemento de su sitio ya que le permitiría ocuparse en otros aspectos de la web y no de estar ocupado programando anuncios que indican las notificaciones que usted quiere mostrar, y que, en ocasiones el usuario nunca llega a ver.
 
-_This works as a complement to your site because it would allow you to deal with other aspects
-of the web and not to be busy scheduling ads that indicate the notifications you want
-show, and that, sometimes the user never gets to see._
+
+
+## What is StarFly?
+
+It is a notification manager that works as a complement (or plugin) in a website. It is not necessary to add any jQuery plugin, this software does not use it.
+
+​	This works as a complement to your site because it would allow you to deal with other aspects of the web and not to be busy scheduling ads that indicate the notifications you want show, and that, sometimes the user never gets to see.
+
+![Using StarFly](https://www.dl.dropboxusercontent.com/s/3726x09jibbmn3u/browser-StarFly.png?dl=0)
+
+
 
 ## Características 🎁
 
@@ -40,6 +43,8 @@ show, and that, sometimes the user never gets to see._
 * Trabaja con puro código JavaScript (soportado por la mayoría de navegadores actuales)
 * Personalizable a su gusto
 
+
+
 ## Features 🎁
 
 * Fast and reliable
@@ -47,125 +52,127 @@ show, and that, sometimes the user never gets to see._
 * Work with pure JavaScript code (supported by most current browsers)
 * Customizable to your liking
 
-### Requerimientos 📋
+
+
+## Requerimientos 📋
 
 * Soporte para CSS y JavaScript
 
-### Requirements 📋
+
+
+## Requirements 📋
 
 * Support for CSS and JavaScript
 
-### Instalación 🔧
 
-_Pasos para instalar StarFly:_
 
-* 1. Descargar o clonar el repositorio de [StarFly](https://github.com/cpwonline/starfly.git)
+## Instalación 🔧
 
-* 2. Ahora debe copiar el directorio (si lo descargó debe descomprimirlo primero) en el directorio
-donde se encuentra su sitio web local (O remoto)
+Pasos para instalar StarFly:
 
-* 3. En el archivo principal de su sitio web (sea index, index.html o index.php), usted deberá
-tener anexado el archivo de su main.js y los archivos de la carpeta starfly, agregue
-las siguientes líneas de código en su *<head>*:
+1. Descargar o clonar el repositorio de [StarFly](https://github.com/cpwonline/starfly.git)
 
-  ```HTML
-	<!--Archivos principales de StarFly-->
-		<link rel="stylesheet" href="starfly/css/estilo-gen.css"/>
-		<script src="starfly/js/func-gen.js"/></script>
-	<!--Fin Archivos principales de StarFly-->
-  ```
-### Instalation
+2. Ahora debe copiar el directorio (si lo descargó debe descomprimirlo primero) en el directorio donde se encuentra su sitio web local (o remoto)
+
+3. En el archivo principal de su sitio web (sea `index`, `index.html` o `index.php`), usted deberá tener anexado el archivo de su `main.js` (o algún otro archivo que contenga sus funciones de Javascript) y los archivos de la carpeta starfly, agregue las siguientes líneas de código en el `<head>` de su archivo __HTML__:
+
+```HTML
+<link rel="stylesheet" href="starfly/css/estilo-gen.css"/>
+<script src="starfly/js/func-gen.js"/></script>
+```
+
+
+## Instalation
 
 _Steps to install StarFly:_
 
-* 1. Download or clone the repository of [CPW Online](https://github.com/cpwonline/starfly.git)
+1. Download or clone the repository of [CPW Online](https://github.com/cpwonline/starfly.git)
 
-* 2. Now you must copy the directory (if you downloaded it you must unzip it first) in the directory
-where is your local website (or remote)
+2. Now you must copy the directory (if you downloaded it you must unzip it first) in the directory where is your local website (or remote)
 
-* 3. In the main file of your website (be it index, index.html or index.php), you must
-have attached the file of your main.js and the files of the folder starfly, add
-The following lines of code in your **head**:
+3. In the main file of your website (be it index, index.html or index.php), you must have attached the file of your main.js and the files of the folder starfly, add the following lines of code in your HTML **head**:
 
-  ```HTML
-	<!--StarFly main files-->
-		<link rel="stylesheet" href="starfly/css/estilo-gen.css"/>
-		<script src="starfly/js/func-gen.js"/></script>
-	<!--End StarFly main files-->
-  ```
+```HTML
+<link rel="stylesheet" href="starfly/css/estilo-gen.css"/>
+<script src="starfly/js/func-gen.js"/></script>
+```
+
+
 
 ## Cómo usar StarFly
 
+### Tipos de notificaciones
+
 Es fácil, hay tres tipos de notificaciones:
 
-* 1. _Not. que desaparece al presionar 'Ok'_
+1. __Notificación que desaparece al presionar `Ok`__
 
-Para mostrar esta notificación, añada las siguientes líneas de código a su *main.js*:
+   Para mostrar esta notificación, añada las siguientes líneas de código a su *main.js*:
 
-	```Js
-	//Inicio de código
-		//Datos
-			var titulo = "Alerta"
-			var mensaje = "Usted ha ingresado una clave incorrecta."
-		//Notificación
-			starFly(titulo, mensaje, 0, 0, "question");
-	//Fin de código
-	```
+```javascript
+//Datos
+    var titulo = "Alerta"
+    var mensaje = "Usted ha ingresado una clave incorrecta."
+//Notificación
+	starFly(titulo, mensaje, 0, 0, "question");
+```
 
-* 2. _Not. que desaparece automáticamente en determinados segundos_
+2. __Not. que desaparece automáticamente en determinados segundos__
 
-Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
+   Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
 
-	```Js
-	//Inicio de código
-		//Datos
-			var titulo = "Alerta"
-			var mensaje = "Usted ha ingresado una clave incorrecta."
-		//Notificación
-			starFly(titulo, mensaje, 1, 5000, "security");
-	//Fin de código
-	```
+```javascript
+//Datos
+    var titulo = "Alerta"
+    var mensaje = "Usted ha ingresado una clave incorrecta."
+//Notificación
+	sstarFly(titulo, mensaje, 1, 5000, "security");
+```
 
-* _Nota: En el código anterior la notificación desaparecerá al cumplirse 5 segundos (5000 milisegundos)._
+​	_Nota: En este código la notificación desaparecerá al cumplirse 5 segundos (5000 milisegundos)._
 
-* 3. _Not. que desaparece sólo con código_
+3. __Not. que desaparece sólo con código__
 
-Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
+   Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
 
-	```Js
-	//Inicio de código
-		//Datos
-			var titulo = "Alerta"
-			var mensaje = "Usted ha ingresado una clave incorrecta."
-		//Notificación
-			//Se crea
-				ob_sF = starFly(titulo, mensaje, 2, 0, "question");
-			//Se borra
-				borrarElemento_starFly(ob_sF, 1, 'xT');
-	//Fin de código
-	```
+```javascript
+//Datos
+    var titulo = "Alerta"
+    var mensaje = "Usted ha ingresado una clave incorrecta."
+//Notificación
+    //Se crea
+    	ob_sF = starFly(titulo, mensaje, 2, 0, "question");
+	// Se realiza alguna operación
+		/*Alguna operación que tarde algún tiempo*/
+    //Se borra
+    	borrarElemento_starFly(ob_sF, 1, 'xT');
+```
+*Cabe destacar que esta notificación es exclusiva para cuando se esté realizando un proceso (la carga de un archivo, o la consulta de lagunos datos a un servidor), cuando este termine, se elimina manualmente con la función* `borrarElemento_starFly()`
 
+4. __*Extra*. Editar el mensaje (Solo para la notificación que desaparece con código)__
 
-* _Extra. También puede editar el mensaje (Solo para la notificación que desaparece con código)_
-
-Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
+   Para mostrar esta notificación, añada las siguientes líneas de código a su main.js:
 
 	```Js
-	//Inicio de código
-		//Datos
-			var titulo = "Alerta"
-			var mensaje = "Usted ha ingresado una clave incorrecta."
-		//Notificación
-			//Se crea
-				ob_sF = starFly(titulo, mensaje, 2, 5000, "question");
-			//Editamos el mensaje
-				nuevoMsj_starFly('Usted ha sido bloqueado', ob_sF);
-			//Se borra
-				borrarElemento_starFly(ob_sF, 1, 'xT');
-	//Fin de código
+	//Datos
+	    var titulo = "Alerta"
+	    var mensaje = "Usted ha ingresado una clave incorrecta."
+	    //Notificación
+	    //Se crea
+	    	ob_sF = starFly(titulo, mensaje, 2, 5000, "question");
+		// Se realiza un proceso
+			/*Proceso en ejecución*/
+	    //¿Terminó el proceso? Editamos el mensaje
+	    	nuevoMsj_starFly('Usted ha sido bloqueado', ob_sF);
+	    //Se borra
+	   	 	borrarElemento_starFly(ob_sF, 1, 'xT');
 	```
 
-* _Extra. Algunos iconos disponibles para su notificación:_
+
+
+### Iconos de notificaciones
+
+Algunos iconos disponibles para su notificación:
 
 1. **good**: Icono que indica una afirmación o que algo se realizó correctamente.
 
@@ -181,28 +188,27 @@ Para mostrar esta notificación, añada las siguientes líneas de código a su m
 
 7. **security**: Icono que indica que lo que se muestra es privado, información importante o restringida
 
-* Extra. Si usted tiene un archivo *.js* (código fuente de JavaScript) usted puede editar ese archivo y
-agregar las siguientes líneas de código (Desde "Inicio copiado" hasta "Fin copiado", nada más) para cambiar el
-diseño de StarFly:
 
-		```Js
-		//Inicio copiado
-		//Variables generales de StarFly
-			//De estilo
-				estiloContenedor = "background:hsla(0, 0%, 30%, .9);padding:.2cm;margin-bottom:.1cm;overflow:hidden;text-align:right;border-radius:.1cm;-webkit-border-radius:.1cm;-moz-border-radius:.1cm;-o-border-radius:.1cm;transition:.3s all;-webkit-transition:.3s all;-moz-transition:.3s all;-o-transition:.3s all;";
-				estiloIcono = "width:16px;height:16px;display:inline-block;";
-				estiloTitulo = "display:inline-block;font-size:12pt;color:#CCC;margin-bottom:.1cm;padding:.25cm;";
-				estiloCerrar = "cursor:pointer;display:inline-block;float:right;padding:.4cm;color:#fff;text-align:center;width:10%;";
-				estiloMensaje = "font-size:10pt;color:#FFF;";
-				estiloBoton = "btn-gen";//Debes elegir una clase de estilo
-		//De personalización
-				textoBotonGen = "Ok";
-		//Fin variables generales de StarFly
-		//Fin copiado
-		```
 
-_Si usted no tiene algún archivo .js, deberá crear un archivo llamado *"main.js"* (Puede ser
-el nombre que usted desee) y agregar las líneas de código anteriores._
+### Dándole otro estilo a StarFly
+
+Si usted tiene un archivo *.js  (código fuente de JavaScript) usted puede editar ese archivo y agregar las siguientes líneas de código (Desde "Inicio copiado" hasta "Fin copiado", nada más) para cambiar el diseño de StarFly:
+
+```javascript
+//Variables generales de StarFly
+	//De estilo
+		estiloContenedor = "background:hsla(0, 0%, 30%, .9);padding:.2cm;margin-bottom:.1cm;overflow:hidden;text-align:right;border-radius:.1cm;-webkit-border-radius:.1cm;-moz-border-radius:.1cm;-o-border-radius:.1cm;transition:.3s all;-webkit-transition:.3s all;-moz-transition:.3s all;-o-transition:.3s all;";
+		estiloIcono = "width:16px;height:16px;display:inline-block;";
+		estiloTitulo = "display:inline-block;font-size:12pt;color:#CCC;margin-bottom:.1cm;padding:.25cm;";
+		estiloCerrar = "cursor:pointer;display:inline-block;float:right;padding:.4cm;color:#fff;text-align:center;width:10%;";
+		estiloMensaje = "font-size:10pt;color:#FFF;";
+		estiloBoton = "tu_estilo_de_boton";//Debes elegir una clase de estilo
+	//De personalización
+		textoBotonGen = "Ok";
+//Fin variables generales de StarFly
+```
+_Si usted no tiene algún archivo .js, deberá crear un archivo llamado `main.js` (Puede ser el nombre que usted desee) y agregar las líneas de código anteriores._
+
 
 
 ## How to use StarFly
